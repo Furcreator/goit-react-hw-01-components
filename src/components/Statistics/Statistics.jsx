@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Statistics = ({ title, stats }) => {
     return (
         <Section>
-            {title && <h2>Upload stats</h2>}
+            {title && <h2>{title}</h2>}
 
             <List>
                 {stats.map(el => (
@@ -21,10 +21,10 @@ const Statistics = ({ title, stats }) => {
 export default Statistics
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
-    })).isRequired,
+    }).isRequired).isRequired,
 }

@@ -28,7 +28,7 @@ export const FriendItem = styled.li`
     }
 `;
 
-export const FriendListItem = styled.ul`
+export const FriendListBlock = styled.ul`
     margin: 0;
     padding: 0;
     display: flex;
