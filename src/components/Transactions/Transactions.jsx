@@ -1,4 +1,4 @@
-import { ElTable, Table  } from "./Transactions.styled"
+import { Table  } from "./Transactions.styled"
 
 const TransactionHistory = ({ items }) => {
     return (
